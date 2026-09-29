@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Foreground Service'in kalıcı, düşük öncelikli bildirimi için kullanılan ikon.
+    Android, bildirim/status bar ikonlarını HER ZAMAN tek renkli (monokrom) silüete
+    çevirir; burada verdiğimiz fillColor görsel olarak önemsizdir ama geçerli bir
+    renk olması gerekir (aksi halde build sırasında resource hatası alınır).
+    Basit, dolu bir daire — "Brevis dinliyor" durumunu temsil eder.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24"
+    android:tint="#FFFFFF">
+    <path
+        android:fillColor="#FF000000"
+        android:pathData="M12,2A10,10 0 1,0 12.01,2Z" />
+</vector>

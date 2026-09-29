@@ -1,0 +1,26 @@
+name: brevis
+description: "Bildirim yorgunluğunu önleyen, mahremiyet odaklı, tamamen cihaz üzerinde çalışan bildirim özetleyici."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  shared_preferences: ^2.3.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+
+# Not: Tema tercihini (aydınlık/karanlık/sistem) cihazda saklamak için tek ek paket
+# olarak shared_preferences ekledik — bu saf bir UI tercihi, native config'e (Kotlin
+# tarafına) hiç gitmiyor. State yönetiminin geri kalanı hâlâ tek bir ChangeNotifier
+# (ConfigController / ModelController / ThemeController) ile yapılıyor.
